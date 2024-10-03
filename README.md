@@ -25,6 +25,8 @@ helm install my-release oci://registry-1.docker.io/bitnamicharts/spark --values 
 ```
 este comando usa un archivo `helm.yaml` que sobre escribe la imagen normal que contiene las librerias correspondientes `Dockerfile.spark`.
 
+## Ejecucion del script
+
 posteriormente debemos conectarnos al nodo master para correr el script 
 
 ```
@@ -35,5 +37,24 @@ estando en la consola del nodo master se ejecuta el train
 ```
 sh /home/spark/run.sh train_model.py
 ```
+# Ejecucion en CPU o GPU
+
+Para la ejecucion del python en un ambiente normal se usa una imagen custom que parte desde la imagen `tensorflow/tensorflow:latest-gpu-jupyter` usando `Dockerfile.GPU`
+
+```
+docker build -f DockerFiles\Dockerfile.GPU -t gpu_execute .
+```
+
+## CPU
+```
+docker run --rm -v C:\Users\nitro\OneDrive\Escritorio\Freestyle\Spark\Training_Comparison:/home/spark gpu_execute:latest
+```
+
+## GPU
+
+```
+docker run --rm --runtime=nvidia -v C:\Users\nitro\OneDrive\Escritorio\Freestyle\Spark\Training_Comparison:/home/spark gpu_execute:latest
+```
+
 
 
