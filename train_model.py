@@ -31,9 +31,9 @@ else:
 
 localPath = pathlib.Path().resolve()
 
-train_data_path = pathlib.Path(localPath.parents[0] ,"Dataset/TRAIN")
-test_data_path = pathlib.Path(localPath.parents[0] ,"Dataset/TEST")
-val_data_path = pathlib.Path(localPath.parents[0] ,"Dataset/VALIDATION")
+train_data_path = pathlib.Path(localPath ,"Dataset/TRAIN")
+test_data_path = pathlib.Path(localPath ,"Dataset/TEST")
+val_data_path = pathlib.Path(localPath ,"Dataset/VALIDATION")
 
 
 class_names = np.array(sorted([item.name for item in train_data_path.glob('*') if item.name != "LICENSE.txt"]))
