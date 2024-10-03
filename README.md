@@ -1,21 +1,39 @@
 # Ejecucion en cluster
 
+## kindcluster
+
 El codigo para entrenar el modelo requiere de la creacion de un cluster de kind usando los siguientes comandos
+```
+kind create cluster --config .\Configuration\config.yaml
+```
+
+
+## Custom Spark Image
+
+Es necesario crear una imagen customizada con tensorflow instalado para poder entrenar modelos
 
 ```
-kind create cluster --config .\work-station\config.yaml
+docker build -f DockerFiles\Dockerfile.Spark -t custom_tensorflow_spark .
 ```
+
+## helm chart
+
 Y luego se debe instalar el cluster con el siguiente comando
 
 ```
-helm install my-release oci://registry-1.docker.io/bitnamicharts/spark --values .\Training_Comparison\helm.yaml
+helm install my-release oci://registry-1.docker.io/bitnamicharts/spark --values .\Configuration\helm.yaml
 ```
 este comando usa un archivo `helm.yaml` que sobre escribe la imagen normal que contiene las librerias correspondientes `Dockerfile.spark`.
 
-posteriormente debemos conectarnos a nodo master para correr el script o usar el run.sh para correrlo desde la linea de comandos
+posteriormente debemos conectarnos al nodo master para correr el script 
 
 ```
-kubectl exec -n default my-release-spark-master-0 -c spark-master -- /bin/sh -c "/home/spark/tensorflow_cluster/run.sh tensorflow_cluster.py"
+kubectl exec -i -t -n default my-release-spark-master-0 -c spark-master -- sh -c "clear; (bash || ash || sh)"
+```
+estando en la consola del nodo master se ejecuta el train 
+
+```
+sh /home/spark/run.sh train_model.py
 ```
 
 
