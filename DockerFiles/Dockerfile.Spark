@@ -1,0 +1,11 @@
+FROM bitnami/spark:latest
+
+# Install TensorFlow
+RUN pip install tensorflow spark-tensorflow-distributor
+
+RUN pip install findspark
+
+# Set Spark environment variables (if needed)
+ENV SPARK_HOME=/opt/bitnami/spark
+
+CMD ["/opt/bitnami/scripts/spark/run.sh"]

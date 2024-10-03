@@ -1,0 +1,7 @@
+FROM tensorflow/tensorflow:latest-gpu-jupyter
+
+WORKDIR /home/spark/tensorflow_cluster
+
+CMD ["python","tensorflow_cluster.py"]
+
+
