@@ -4,7 +4,7 @@ import pathlib
 import os
 import time
 import json
-from datetime import datetime
+from datetime import datetime,timezone,timedelta
 
 from tensorflow.keras.models import Model # type: ignore
 from tensorflow.keras.layers import  Dense, Flatten, Dropout # type: ignore
@@ -157,7 +157,7 @@ else:
 # Crear un nuevo registro
 nuevo_registro = {
     'Tipo Ejecucion' : tipoEjecucion,
-    'timestamp': datetime.now().isoformat(),
+    'timestamp': (datetime.now(timezone.utc) - timedelta(hours=5)).isoformat(),
     'Steps_per_epoch': Steps_per_epoch,
     'Epochs':Epochs,
     'tiempo_ejecucion': tiempo_ejecucion,
