@@ -14,18 +14,18 @@ from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLRO
 
 try:
     from spark_tensorflow_distributor import MirroredStrategyRunner # type: ignore
-    ClusterRunner = True
+    cluster_runner = True
 except:
-    ClusterRunner = False
+    cluster_runner = False
     print("No esta MirroredStrategyRunner disponible")
 
 gpus = len(tf.config.list_physical_devices('GPU'))
 
 if gpus >= 1:
-    GpuRunner = True
+    gpu_runner = True
     print("Num GPUs Available: ", gpus)
 else:
-    GpuRunner = False
+    gpu_runner = False
     print("No hay Gpus Disponibles")
 
 
@@ -42,10 +42,9 @@ print(class_names)
 AUTOTUNE = tf.data.AUTOTUNE
 
 img_size = 128
-
+use_callbacks = False
 BUFFER_SIZE = 100000
 BATCH_SIZE = 64
-
 Epochs = 1
 Steps_per_epoch = 1
 Slots = 2
@@ -97,13 +96,11 @@ def build_and_compile_VGG19():
 
     filepath = "model.keras"
 
-    callbacks=[]
+
     es = EarlyStopping(monitor="val_loss", verbose=1, mode="min", patience=4)
-    callbacks.append(es)
     cp=ModelCheckpoint(filepath, monitor="val_loss", save_best_only=True, save_weights_only=False,mode="auto", save_freq="epoch")
-    callbacks.append(cp)
     lrr = ReduceLROnPlateau(monitor="val_accuracy", patience=3, verbose=1, factor=0.5, min_lr=0.0001)
-    callbacks.append(lrr)
+    callbacks=[es,cp,lrr]
 
     sgd = SGD(learning_rate=0.0001, decay = 1e-6, momentum=1e-6, nesterov = True)
 
@@ -117,19 +114,20 @@ def train():
     options.experimental_distribute.auto_shard_policy = tf.data.experimental.AutoShardPolicy.DATA
     train_datasets = train_datasets.with_options(options)
     multi_worker_model,callbacks = build_and_compile_VGG19()
-    multi_worker_model.fit(
+    history = multi_worker_model.fit(
         x=train_datasets, 
         epochs=Epochs, 
         steps_per_epoch=Steps_per_epoch,
         validation_data=validation_data,
-        callbacks=callbacks
+        callbacks = callbacks if use_callbacks else []
     )
+    return history,multi_worker_model
 
 
 inicio = time.time()
 
-if ClusterRunner:
-    MirroredStrategyRunner(
+if cluster_runner:
+    history,modelo_final = MirroredStrategyRunner(
         num_slots=Slots,
         use_gpu = False,
         local_mode = False,
@@ -137,7 +135,7 @@ if ClusterRunner:
         ).run(train)
     print("Se termino la ejecucion del entrenamiento en paralelo")
 else:
-    train()
+    history,modelo_final = train()
     print("Se termino la ejecucion del entrenamiento normal")
 
 fin = time.time()
@@ -145,25 +143,29 @@ fin = time.time()
 # Calcular el tiempo transcurrido
 tiempo_ejecucion = fin - inicio
 
-if GpuRunner :
-    tipoEjecucion = "Ejecucion con GPU"
+if gpu_runner :
+    tipo_ejecucion = "Ejecucion con GPU"
+    modelo_final.save('modelos/modeloGPU.keras')
     Slots = 0
-elif ClusterRunner:
-    tipoEjecucion = "Ejecucion con Cluster"
+elif cluster_runner:
+    tipo_ejecucion = "Ejecucion con Cluster"
+    modelo_final.save('modelos/modeloCluster.keras')
 else:
-    tipoEjecucion = "Ejecucion con CPU"
+    tipo_ejecucion = "Ejecucion con CPU"
+    modelo_final.save('modelos/modeloCPU.keras')
     Slots = 0
 
 # Crear un nuevo registro
 nuevo_registro = {
-    'Tipo Ejecucion' : tipoEjecucion,
+    'Tipo Ejecucion' : tipo_ejecucion,
     'timestamp': (datetime.now(timezone.utc) - timedelta(hours=5)).isoformat(),
     'Steps_per_epoch': Steps_per_epoch,
     'Epochs':Epochs,
     'tiempo_ejecucion': tiempo_ejecucion,
     'tiempo_ejecucion_mins': tiempo_ejecucion/60,
     'tiempo_ejecucion_horas': tiempo_ejecucion/3600,
-    'Slots' : Slots
+    'Slots' : Slots,
+    'accuracy' : history.history['accuracy']
 
 }
 
