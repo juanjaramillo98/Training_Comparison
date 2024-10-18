@@ -1,3 +1,4 @@
 Dataset/*
 tiempo_ejecucion.json
 *.keras
+*.npy
