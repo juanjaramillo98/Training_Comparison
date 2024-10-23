@@ -7,6 +7,8 @@ from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 import numpy as np
 import pathlib
 import time
+import os
+import json
 
 # Iniciar una sesión de Spark
 spark = SparkSession.builder.appName("LogisticRegressionExample").getOrCreate()
@@ -37,13 +39,48 @@ def unpack(array):
 df_train = unpack(np.load(train_data_path))
 df_test = unpack(np.load(test_data_path))
 
+def writeJson(tiempo,accu,metod):
+    nuevo_registro = {
+        'Tipo Ejecucion' : "Cluster",
+        'Metodo' : metod,
+        'Epochs':20,
+        'tiempo_ejecucion': tiempo,
+        'accuracy' : accu
+    }
+    nombre_archivo = 'Cluster_tiempos.json'
+
+    # Leer el contenido existente, si el archivo ya existe
+    if os.path.exists(nombre_archivo):
+        with open(nombre_archivo, 'r') as archivo:
+            try:
+                registros = json.load(archivo)
+            except json.JSONDecodeError:
+                registros = []
+    else:
+        registros = []
+
+    # Agregar el nuevo registro
+    registros.append(nuevo_registro)
+
+    # Guardar los registros actualizados en el archivo JSON
+    with open(nombre_archivo, 'w') as archivo:
+        json.dump(registros, archivo, indent=4)
+
 #-----------------------------------------------------------LogisticRegression----------------------------------------------------------
 
 layers = [1000, 500, 200, 2]
 
 # 2. Inicializar el modelo MLP
 #mlpc = MultilayerPerceptronClassifier(featuresCol="features", labelCol="label", layers=layers, blockSize=128, seed=1234)
-mlpc = MultilayerPerceptronClassifier(featuresCol="features", labelCol="label", layers=layers , blockSize=7597 , maxIter=20 , seed=1234)
+mlpc = MultilayerPerceptronClassifier(
+    featuresCol="features", 
+    labelCol="label", 
+    layers=layers , 
+    blockSize=7597 , 
+    maxIter=20 , 
+    seed=4321,
+    solver='gd'
+)
 
 inicio = time.time()
 
@@ -51,7 +88,7 @@ inicio = time.time()
 mlpc_model = mlpc.fit(df_train)
 
 fin = time.time()
-tiempo_ejecucion_LR = fin - inicio
+tiempo_ejecucion_MLPC = fin - inicio
 
 # 5. Hacer predicciones
 predictions = mlpc_model.transform(df_test)
@@ -60,9 +97,7 @@ predictions = mlpc_model.transform(df_test)
 accuracy_evaluator = MulticlassClassificationEvaluator(labelCol="label", predictionCol="prediction", metricName="accuracy")
 accuracy = accuracy_evaluator.evaluate(predictions)
 
-print(f"Accuracy: {accuracy:.2f}, tiempo: {tiempo_ejecucion_LR:.2f}")
+print(f"Accuracy: {accuracy:.2f}, tiempo: {tiempo_ejecucion_MLPC:.2f}")
 
-
-# Cerrar la sesión de Spark
-spark.stop()
+writeJson(tiempo_ejecucion_MLPC,accuracy,"MLPC")
 

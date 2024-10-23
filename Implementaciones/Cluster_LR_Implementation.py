@@ -7,6 +7,8 @@ from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 import numpy as np
 import pathlib
 import time
+import os
+import json
 
 # Iniciar una sesión de Spark
 spark = SparkSession.builder.appName("LogisticRegressionExample").getOrCreate()
@@ -37,6 +39,33 @@ def unpack(array):
 df_train = unpack(np.load(train_data_path))
 df_test = unpack(np.load(test_data_path))
 
+def writeJson(tiempo,accu,metod):
+    nuevo_registro = {
+        'Tipo Ejecucion' : "Cluster",
+        'Metodo' : metod,
+        'Epochs':20,
+        'tiempo_ejecucion': tiempo,
+        'accuracy' : accu
+    }
+    nombre_archivo = 'Cluster_tiempos.json'
+
+    # Leer el contenido existente, si el archivo ya existe
+    if os.path.exists(nombre_archivo):
+        with open(nombre_archivo, 'r') as archivo:
+            try:
+                registros = json.load(archivo)
+            except json.JSONDecodeError:
+                registros = []
+    else:
+        registros = []
+
+    # Agregar el nuevo registro
+    registros.append(nuevo_registro)
+
+    # Guardar los registros actualizados en el archivo JSON
+    with open(nombre_archivo, 'w') as archivo:
+        json.dump(registros, archivo, indent=4)
+
 #-----------------------------------------------------------LogisticRegression----------------------------------------------------------
 
 # 2. Inicializar el modelo de regresión logística
@@ -58,6 +87,7 @@ accuracy = accuracy_evaluator.evaluate(predictions)
 
 print(f"Accuracy: {accuracy:.2f}, tiempo: {tiempo_ejecucion_LR:.2f}")
 
+writeJson(tiempo_ejecucion_LR,accuracy,"Logistic Regression")
 
 # Cerrar la sesión de Spark
 spark.stop()
