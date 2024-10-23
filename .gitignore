@@ -2,3 +2,6 @@ Dataset/*
 tiempo_ejecucion.json
 *.keras
 *.npy
+GPU_tiempos.json
+CPU_tiempos.json
+Cluster_tiempos.json
