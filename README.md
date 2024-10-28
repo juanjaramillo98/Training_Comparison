@@ -21,7 +21,7 @@ docker build -f DockerFiles\Dockerfile.Spark -t custom_tensorflow_spark .
 Y luego se debe instalar el cluster con el siguiente comando
 
 ```
-helm install my-release oci://registry-1.docker.io/bitnamicharts/spark --values .\Configuration\helm.yaml
+helm install my-release oci://registry-1.docker.io/bitnamicharts/spark --values .\Configuration\helm.yaml --set securityContext.runAsUser=0
 ```
 este comando usa un archivo `helm.yaml` que sobre escribe la imagen normal que contiene las librerias correspondientes `Dockerfile.spark`.
 
