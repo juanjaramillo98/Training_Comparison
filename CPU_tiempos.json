@@ -61,5 +61,12 @@
         "Epochs": 20,
         "tiempo_ejecucion": 43.615642070770264,
         "accuracy": 0.7423324996709227
+    },
+    {
+        "Tipo Ejecucion": "CPU_cross_val",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 163.16012454032898,
+        "accuracy": 0.7396340724868442
     }
 ]
