@@ -47,7 +47,8 @@ def writeJson(tiempo,accu,metod):
         'Metodo' : metod,
         'Epochs':20,
         'tiempo_ejecucion': tiempo,
-        'accuracy' : accu
+        'accuracy' : accu,
+        'parallelism' : 2
     }
     nombre_archivo = 'Clus_MLPC_Tunning.json'
 

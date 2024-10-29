@@ -5,5 +5,36 @@
         "Epochs": 20,
         "tiempo_ejecucion": 435.46834111213684,
         "accuracy": 0.7396551101333507
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 513.9619853496552,
+        "accuracy": 0.7396551101333507
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 485.6088869571686,
+        "accuracy": 0.7396551101333507,
+        "parallelism": 8
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 528.9896516799927,
+        "accuracy": 0.7396551101333507,
+        "parallelism": 4
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 545.7025487422943,
+        "accuracy": 0.7396551101333507,
+        "parallelism": 2
     }
 ]
