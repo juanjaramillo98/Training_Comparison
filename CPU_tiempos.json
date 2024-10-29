@@ -1,0 +1,65 @@
+[
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Logistic Regression",
+        "Epochs": 20,
+        "tiempo_ejecucion": 1.3200757503509521,
+        "accuracy": 0.7396340660787153
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Naive Bayes",
+        "Epochs": 20,
+        "tiempo_ejecucion": 0.19949555397033691,
+        "accuracy": 0.3748190075029617
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 36.26956558227539,
+        "accuracy": 0.7409503751480848
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Logistic Regression",
+        "Epochs": 20,
+        "tiempo_ejecucion": 1.311328649520874,
+        "accuracy": 0.7396340660787153
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Naive Bayes",
+        "Epochs": 20,
+        "tiempo_ejecucion": 0.152604341506958,
+        "accuracy": 0.3748190075029617
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 36.20675444602966,
+        "accuracy": 0.7417401605897065
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Logistic Regression",
+        "Epochs": 20,
+        "tiempo_ejecucion": 1.5385217666625977,
+        "accuracy": 0.7396340660787153
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Naive Bayes",
+        "Epochs": 20,
+        "tiempo_ejecucion": 0.20204901695251465,
+        "accuracy": 0.3748190075029617
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 43.615642070770264,
+        "accuracy": 0.7423324996709227
+    }
+]

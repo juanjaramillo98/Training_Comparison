@@ -1,0 +1,93 @@
+[
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 29.337104320526123,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 27.671425342559814,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 27.86982560157776,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 30.968668937683105,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "Naive Bayes",
+        "Epochs": 20,
+        "tiempo_ejecucion": 12.147480487823486,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "Naive Bayes",
+        "Epochs": 20,
+        "tiempo_ejecucion": 11.639415264129639,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "Naive Bayes",
+        "Epochs": 20,
+        "tiempo_ejecucion": 11.331689357757568,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "Logistic Regression",
+        "Epochs": 20,
+        "tiempo_ejecucion": 81.45238184928894,
+        "accuracy": 0.6661157024793388
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "Logistic Regression",
+        "Epochs": 20,
+        "tiempo_ejecucion": 81.60743379592896,
+        "accuracy": 0.6661157024793388
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 28.138477087020874,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 29.521873235702515,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 29.788255214691162,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "Logistic Regression",
+        "Epochs": 20,
+        "tiempo_ejecucion": 75.96712756156921,
+        "accuracy": 0.6661157024793388
+    }
+]

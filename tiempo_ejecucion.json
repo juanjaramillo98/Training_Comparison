@@ -1,0 +1,292 @@
+[
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:33:07.818695+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 36.07515215873718,
+        "tiempo_ejecucion_mins": 0.601252535978953,
+        "tiempo_ejecucion_horas": 0.010020875599649218,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:35:08.105699+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 35.828874349594116,
+        "tiempo_ejecucion_mins": 0.5971479058265686,
+        "tiempo_ejecucion_horas": 0.009952465097109477,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:36:07.840067+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 36.36661076545715,
+        "tiempo_ejecucion_mins": 0.6061101794242859,
+        "tiempo_ejecucion_horas": 0.010101836323738098,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:36:53.801205+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 36.2540328502655,
+        "tiempo_ejecucion_mins": 0.6042338808377584,
+        "tiempo_ejecucion_horas": 0.010070564680629307,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:37:51.646238+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 35.996843338012695,
+        "tiempo_ejecucion_mins": 0.5999473889668783,
+        "tiempo_ejecucion_horas": 0.009999123149447972,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:39:16.388916+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 71.1039171218872,
+        "tiempo_ejecucion_mins": 1.1850652853647867,
+        "tiempo_ejecucion_horas": 0.019751088089413112,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:40:37.640821+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 69.41581320762634,
+        "tiempo_ejecucion_mins": 1.1569302201271057,
+        "tiempo_ejecucion_horas": 0.01928217033545176,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:42:07.117405+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 69.07231140136719,
+        "tiempo_ejecucion_mins": 1.1512051900227864,
+        "tiempo_ejecucion_horas": 0.01918675316704644,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:43:29.716747+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 70.20831108093262,
+        "tiempo_ejecucion_mins": 1.1701385180155437,
+        "tiempo_ejecucion_horas": 0.019502308633592393,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:51:47.238129+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 68.28051400184631,
+        "tiempo_ejecucion_mins": 1.1380085666974387,
+        "tiempo_ejecucion_horas": 0.018966809444957308,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T13:59:19.212165+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 100,
+        "tiempo_ejecucion": 424.7001190185547,
+        "tiempo_ejecucion_mins": 7.078335316975911,
+        "tiempo_ejecucion_horas": 0.11797225528293186,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-04T14:07:20.471329+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 100,
+        "tiempo_ejecucion": 471.2972855567932,
+        "tiempo_ejecucion_mins": 7.854954759279887,
+        "tiempo_ejecucion_horas": 0.1309159126546648,
+        "Slots": 2
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con CPU",
+        "timestamp": "2024-10-04T14:11:24.004231+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 12.712335348129272,
+        "tiempo_ejecucion_mins": 0.21187225580215455,
+        "tiempo_ejecucion_horas": 0.0035312042633692422,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con CPU",
+        "timestamp": "2024-10-04T14:14:57.630378+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 12.901880025863647,
+        "tiempo_ejecucion_mins": 0.21503133376439412,
+        "tiempo_ejecucion_horas": 0.003583855562739902,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con CPU",
+        "timestamp": "2024-10-04T14:17:06.658400+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 13.042388916015625,
+        "tiempo_ejecucion_mins": 0.2173731486002604,
+        "tiempo_ejecucion_horas": 0.0036228858100043402,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con CPU",
+        "timestamp": "2024-10-04T14:59:36.418110+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 13.504245042800903,
+        "tiempo_ejecucion_mins": 0.2250707507133484,
+        "tiempo_ejecucion_horas": 0.0037511791785558063,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con CPU",
+        "timestamp": "2024-10-04T15:39:08.285460+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 13.76155948638916,
+        "tiempo_ejecucion_mins": 0.22935932477315266,
+        "tiempo_ejecucion_horas": 0.0038226554128858777,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con CPU",
+        "timestamp": "2024-10-04T15:58:54.185905+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 29.802306413650513,
+        "tiempo_ejecucion_mins": 0.4967051068941752,
+        "tiempo_ejecucion_horas": 0.008278418448236253,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con CPU",
+        "timestamp": "2024-10-04T16:29:46.767631+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 31.284531116485596,
+        "tiempo_ejecucion_mins": 0.5214088519414266,
+        "tiempo_ejecucion_horas": 0.00869014753235711,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con CPU",
+        "timestamp": "2024-10-04T16:37:43.607358+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 32.229949712753296,
+        "tiempo_ejecucion_mins": 0.5371658285458882,
+        "tiempo_ejecucion_horas": 0.008952763809098138,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con CPU",
+        "timestamp": "2024-10-08T17:50:51.086173+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 100,
+        "tiempo_ejecucion": 211.01133799552917,
+        "tiempo_ejecucion_mins": 3.5168556332588197,
+        "tiempo_ejecucion_horas": 0.05861426055431366,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con GPU",
+        "timestamp": "2024-10-08T17:57:53.708576+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 100,
+        "tiempo_ejecucion": 38.00320839881897,
+        "tiempo_ejecucion_mins": 0.6333868066469829,
+        "tiempo_ejecucion_horas": 0.010556446777449715,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con GPU",
+        "timestamp": "2024-10-08T18:00:17.340179+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 100,
+        "tiempo_ejecucion": 33.01017904281616,
+        "tiempo_ejecucion_mins": 0.5501696507136027,
+        "tiempo_ejecucion_horas": 0.009169494178560045,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con GPU",
+        "timestamp": "2024-10-08T18:00:57.712346+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 22.060938119888306,
+        "tiempo_ejecucion_mins": 0.36768230199813845,
+        "tiempo_ejecucion_horas": 0.006128038366635641,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con GPU",
+        "timestamp": "2024-10-08T18:02:09.201817+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 23.07199215888977,
+        "tiempo_ejecucion_mins": 0.3845332026481628,
+        "tiempo_ejecucion_horas": 0.006408886710802714,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con GPU",
+        "timestamp": "2024-10-08T18:07:47.423009+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 22.255011796951294,
+        "tiempo_ejecucion_mins": 0.37091686328252155,
+        "tiempo_ejecucion_horas": 0.00618194772137536,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con GPU",
+        "timestamp": "2024-10-08T18:08:43.648798+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 10,
+        "tiempo_ejecucion": 31.651516437530518,
+        "tiempo_ejecucion_mins": 0.527525273958842,
+        "tiempo_ejecucion_horas": 0.008792087899314033,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con GPU",
+        "timestamp": "2024-10-08T18:10:26.546228+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 100,
+        "tiempo_ejecucion": 48.667866706848145,
+        "tiempo_ejecucion_mins": 0.8111311117808024,
+        "tiempo_ejecucion_horas": 0.013518851863013373,
+        "Slots": 0
+    },
+    {
+        "Tipo Ejecucion": "Ejecucion con Cluster",
+        "timestamp": "2024-10-08T18:23:46.230907+00:00",
+        "Steps_per_epoch": 1,
+        "Epochs": 1,
+        "tiempo_ejecucion": 85.65271759033203,
+        "tiempo_ejecucion_mins": 1.4275452931722006,
+        "tiempo_ejecucion_horas": 0.023792421552870008,
+        "Slots": 4
+    }
+]
