@@ -1,0 +1,49 @@
+[
+    {Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='layers', doc='Sizes of layers from input layer to output layer E.g., Array(780,
+        100,
+        10) means 780 inputs, one hidden layer with 100 neurons and output layer of 10 neuroram(parent='MultilayerPerceptronClassifier_703d9a951472', name='stepSize', doc='Step size to be used for each iteration of optimization (>= 0).'): 0.001, Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='maxIter', doc='ma= 0).'): 20, Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='solver', doc='The solver algorithm for optimization. Supported options: l-bfgs, gd.'): 'gd', Param(parent='MultilayerPerceptronClassifier_703d9a951472', name=res column name.'): 'features', Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='labelCol', doc='label column name.'): 'label'
+    },
+    {Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='layers', doc='Sizes of l output layer E.g., Array(780,
+        100,
+        10) means 780 inputs, one hidden layer with 100 neurons and output layer of 10 neurons.'): [
+            1000,
+            500,
+            2
+        ], Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='stepSize', doc='Step size toon of optimization (>= 0).'): 0.0001, Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='maxIter', doc='max number of iterations (>= 0).'): 20, Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='solver', docr optimization. Supported options: l-bfgs, gd.'): 'gd', Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='featuresCol', doc='features column name.'): 'features', Param(parent='MultilayerPerceptronClassifier_703d9a951472',bel column name.'): 'label'
+    },
+    {Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='layers', doc='Sizes of layers from input layer to output layer E.g., Array(780,
+        100,
+        10) means 780 inputs, one hidden layer with 100 neuronseurons.'): [
+            1000,
+            100,
+            2
+        ], Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='stepSize', doc='Step size to be used for each iteration of optimization (>= 0).'): 0.001, Param(parent='MultilayerPerceptronClassifier_703d9a951='max number of iterations (>= 0).'): 20, Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='solver', doc='The solver algorithm for optimization. Supported options: l-bfgs, gd.'): 'gd', Param(parent='MultilayerPerceptronClame='featuresCol', doc='features column name.'): 'features', Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='labelCol', doc='label column name.'): 'label'
+    },
+    {Param(parent='MultilayerPerceptronClassifier_703d9a951472', n
+of layers from input layer to output layer E.g., Array(780,
+        100,
+        10) means 780 inputs, one hidden layer with 100 neurons and output layer of 10 neurons.'): [
+            1000,
+            100,
+            2
+        ], Param(parent='MultilayerPerceptronClassifier_703d9a951472', name=,
+        100,
+        10) means 780 inputs, one hidden layer with 100 neurons and output layer of 10 neurons.'): [
+            1000,
+            500,
+            200,
+            2
+        ], Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='stepSize', doc='Step size to be used for each iteratration of optimization (>= 0).'): 0.001, Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='maxIter', doc='max number of iterations (>= 0).'): 20, Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='solverdoc', doc='The solver algorithm for optimization. Supported options: l-bfgs, gd.'): 'gd', Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='featuresCol', doc='features column name.'): 'features', Param(parent='MultilayerPronerceptronClassifier_703d9a951472', name='labelCol', doc='label column name.'): 'label'
+    },
+    {Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='layers', doc='Sizes of layers from input layer to output layer E.g., Array(780) m,
+        100,
+        10) means 780 inputs, one hidden layer with 100 neurons and output layer of 10 neurons.'): [
+            1000,
+            500,
+            200,
+            2
+        ], Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='stepSize', doc='Step size to be used for each itetimration of optimization (>= 0).'): 0.0001, Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='maxIter', doc='max number of iterations (>= 0).'): 20, Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='solvelver', doc='The solver algorithm for optimization. Supported options: l-bfgs, gd.'): 'gd', Param(parent='MultilayerPerceptronClassifier_703d9a951472', name='featuresCol', doc='features column name.'): 'features', Param(parent='Multilayerer_PerceptronClassifier_703d9a951472', name='labelCol', doc='label column name.'): 'label'
+    }
+]
+
+[np.float64(0.7396551101333507), np.float64(0.2603448898666494), np.float64(0.7396551101333507), np.float64(0.7396551101333507), np.float64(0.2603448898666494), np.float64(0.2603448898666494)]

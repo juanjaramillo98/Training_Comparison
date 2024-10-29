@@ -49,7 +49,7 @@ def writeJson(tiempo,accu,metod):
         'tiempo_ejecucion': tiempo,
         'accuracy' : accu
     }
-    nombre_archivo = 'Cluster_tiempos.json'
+    nombre_archivo = 'Clus_MLPC_Tunning.json'
 
     # Leer el contenido existente, si el archivo ya existe
     if os.path.exists(nombre_archivo):
@@ -78,13 +78,13 @@ ParamMap = (
     .addGrid(
         mlpc.layers, [
             [1000, 500, 2],
+            [1000, 100, 2],
             [1000, 500,  200, 2],
-            [1000, 700, 500, 10, 2]
         ]
     )
-    .baseOn({mlpc.maxIter : 30})
-    .addGrid(mlpc.solver, ["gd", "l-bfgs"])
-    .baseOn({mlpc.stepSize : 0.001})
+    .addGrid(mlpc.stepSize, [0.001, 0.0001])
+    .baseOn({mlpc.maxIter : 20})
+    .baseOn({mlpc.solver : "gd"})
     .baseOn({mlpc.featuresCol : "features"})
     .baseOn({mlpc.labelCol : "label"})
     .build()
@@ -94,11 +94,8 @@ cv = CrossValidator(
     estimator = mlpc, 
     estimatorParamMaps = ParamMap, 
     evaluator = accuracy_evaluator,
-    parallelism = 4
+    parallelism = 2
 )
-
-
-
 
 
 inicio = time.time()
@@ -115,3 +112,6 @@ print(ParamMap)
 
 print(f"Accuracy: {cvModel.avgMetrics[0]:.2f}, tiempo: {tiempo_ejecucion_MLPC:.2f}")
 
+writeJson(tiempo_ejecucion_MLPC,cvModel.avgMetrics[0],"MLPC")
+
+spark.stop()

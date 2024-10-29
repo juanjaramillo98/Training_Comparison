@@ -1,0 +1,9 @@
+[
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 435.46834111213684,
+        "accuracy": 0.7396551101333507
+    }
+]
