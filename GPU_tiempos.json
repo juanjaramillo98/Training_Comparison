@@ -61,5 +61,13 @@
         "Epochs": 20,
         "tiempo_ejecucion": 37.93097805976868,
         "accuracy": 0.7436488270759583
+    },
+    {
+        "Tipo Ejecucion": "GPU_cross",
+        "Metodo": "MLPC",
+        "Epochs": 20,
+        "tiempo_ejecucion": 332.2588036060333,
+        "accuracy": 0.7396340205033356,
+        "paralelism": 2
     }
 ]
