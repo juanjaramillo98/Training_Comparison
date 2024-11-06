@@ -89,5 +89,14 @@
         "Epochs": 20,
         "tiempo_ejecucion": 75.96712756156921,
         "accuracy": 0.6661157024793388
+    },
+    {
+        "Tipo Ejecucion": "ClusterAWS",
+        "Metodo": "MLPC",
+        "Workers" : "4 : m5.xlarge",
+        "Epochs": 20,
+        "tiempo_ejecucion": 279.890394449234,
+        "accuracy": 0.7396276694784053,
+        "parallelism": 2
     }
 ]
