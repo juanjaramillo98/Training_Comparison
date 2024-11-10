@@ -69,5 +69,41 @@
         "tiempo_ejecucion": 332.2588036060333,
         "accuracy": 0.7396340205033356,
         "paralelism": 2
+    },
+    {
+        "Tipo Ejecucion": "GPU",
+        "Metodo": "Random Forest",
+        "tiempo_ejecucion": 5.3271849155426025,
+        "accuracy": 0.8683691024780273
+    },
+    {
+        "Tipo Ejecucion": "GPU",
+        "Metodo": "Random Forest",
+        "tiempo_ejecucion": 4.488558769226074,
+        "accuracy": 0.8683691024780273
+    },
+    {
+        "Tipo Ejecucion": "GPU",
+        "Metodo": "Random Forest",
+        "tiempo_ejecucion": 3.098081350326538,
+        "accuracy": 0.8683691024780273
+    },
+    {
+        "Tipo Ejecucion": "GPU",
+        "Metodo": "Random Forest",
+        "tiempo_ejecucion": 4.049375295639038,
+        "accuracy": 0.8683691024780273
+    },
+    {
+        "Tipo Ejecucion": "GPU",
+        "Metodo": "Random Forest",
+        "tiempo_ejecucion": 2.7304913997650146,
+        "accuracy": 0.8683691024780273
+    },
+    {
+        "Tipo Ejecucion": "GPU",
+        "Metodo": "Random Forest",
+        "tiempo_ejecucion": 4.529031991958618,
+        "accuracy": 0.8683691024780273
     }
 ]

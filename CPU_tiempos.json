@@ -68,5 +68,40 @@
         "Epochs": 20,
         "tiempo_ejecucion": 163.16012454032898,
         "accuracy": 0.7396340724868442
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Random Forest",
+        "Epochs": 20,
+        "tiempo_ejecucion": 8.31279182434082,
+        "accuracy": 0.8684349085165197
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Random Forest",
+        "Epochs": 20,
+        "tiempo_ejecucion": 9.003380298614502,
+        "accuracy": 0.8683690930630512
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Random Forest",
+        "Epochs": 20,
+        "tiempo_ejecucion": 9.482681512832642,
+        "accuracy": 0.8683690930630512
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Random Forest",
+        "Epochs": 20,
+        "tiempo_ejecucion": 9.624617099761963,
+        "accuracy": 0.8683690930630512
+    },
+    {
+        "Tipo Ejecucion": "CPU",
+        "Metodo": "Random Forest",
+        "Epochs": 20,
+        "tiempo_ejecucion": 9.122866153717041,
+        "accuracy": 0.8683690930630512
     }
 ]
