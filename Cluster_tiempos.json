@@ -93,10 +93,31 @@
     {
         "Tipo Ejecucion": "ClusterAWS",
         "Metodo": "MLPC",
-        "Workers" : "4 : m5.xlarge",
+        "Workers": "4 : m5.xlarge",
         "Epochs": 20,
         "tiempo_ejecucion": 279.890394449234,
         "accuracy": 0.7396276694784053,
         "parallelism": 2
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "Random Forest",
+        "Depth": "10",
+        "tiempo_ejecucion": 61.36174488067627,
+        "accuracy": 0.6760330578512397
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "Random Forest",
+        "depth": 100.1,
+        "tiempo_ejecucion": 66.57085967063904,
+        "accuracy": 0.6760330578512397
+    },
+    {
+        "Tipo Ejecucion": "Cluster",
+        "Metodo": "Random Forest",
+        "depth": 10,
+        "tiempo_ejecucion": 98.32213306427002,
+        "accuracy": 0.6760330578512397
     }
 ]
