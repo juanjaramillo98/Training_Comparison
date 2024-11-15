@@ -56,7 +56,7 @@ def writeJson(tiempo,accu,metod):
         'accuracy' : accu,
         'parallelism' : 2
     }
-    nombre_archivo = 'Clus_MLPC_Tunning.json'
+    nombre_archivo = 'Cluster_aws_tiempos.json'
 
     # Leer el contenido existente, si el archivo ya existe
     if os.path.exists(nombre_archivo):

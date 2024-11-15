@@ -53,7 +53,7 @@ def writeJson(tiempo,accu,metod):
         'tiempo_ejecucion': tiempo,
         'accuracy' : accu
     }
-    nombre_archivo = 'Cluster_tiempos.json'
+    nombre_archivo = 'Cluster_aws_tiempos.json'
 
     # Leer el contenido existente, si el archivo ya existe
     if os.path.exists(nombre_archivo):
