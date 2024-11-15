@@ -46,7 +46,8 @@ df_test = unpack(np.load(s3.open('{}/{}'.format(bucket, path1))))
 
 def writeJson(tiempo,accu,metod):
     nuevo_registro = {
-        'Tipo Ejecucion' : "Cluster",
+        'Tipo Ejecucion' : "Cluster AWS",
+        'EC2' : "C#@!",
         'Metodo' : metod,
         'Epochs':20,
         'tiempo_ejecucion': tiempo,
