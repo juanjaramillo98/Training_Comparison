@@ -49,9 +49,8 @@ df_train = unpack(np.load(s3.open('{}/{}'.format(bucket, path2))))
 def writeJson(tiempo,accu,metod):
     nuevo_registro = {
         'Tipo Ejecucion' : "ClusterAWS",
-        'EC2' : "C#@!",
+        'EC2' : "c6g.4xlarge",
         'Metodo' : metod,
-        'Epochs':20,
         'tiempo_ejecucion': tiempo,
         'accuracy' : accu,
         'parallelism' : 2
