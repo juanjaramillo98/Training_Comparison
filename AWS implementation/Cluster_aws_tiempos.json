@@ -1,0 +1,46 @@
+[
+    {
+        "Tipo Ejecucion": "Cluster AWS",
+        "EC2": "c6g.4xlarge",
+        "Metodo": "Logistic Regression AWS",
+        "tiempo_ejecucion": 34.330355644226074,
+        "accuracy": 0.6661157024793388
+    },
+    {
+        "Tipo Ejecucion": "ClusterAWS",
+        "EC2": "c6g.4xlarge",
+        "Metodo": "MLPC",
+        "tiempo_ejecucion": 131.91591453552246,
+        "accuracy": 0.7396133276408817,
+        "parallelism": 2
+    },
+    {
+        "Tipo Ejecucion": "Cluster AWS",
+        "EC2": "c6g.4xlarge",
+        "Metodo": "Naive Bayes",
+        "tiempo_ejecucion": 7.7089643478393555,
+        "accuracy": 0.6756198347107438
+    },
+    {
+        "Tipo Ejecucion": "Cluster AWS",
+        "EC2": "c6g.4xlarge",
+        "Metodo": "Logistic Regression AWS",
+        "tiempo_ejecucion": 34.67942142486572,
+        "accuracy": 0.6661157024793388
+    },
+    {
+        "Tipo Ejecucion": "ClusterAWS",
+        "EC2": "c6g.4xlarge",
+        "Metodo": "MLPC",
+        "tiempo_ejecucion": 130.64974880218506,
+        "accuracy": 0.7396133276408817,
+        "parallelism": 2
+    },
+    {
+        "Tipo Ejecucion": "Cluster AWS",
+        "EC2": "c6g.4xlarge",
+        "Metodo": "Naive Bayes",
+        "tiempo_ejecucion": 7.714270353317261,
+        "accuracy": 0.6756198347107438
+    }
+]
