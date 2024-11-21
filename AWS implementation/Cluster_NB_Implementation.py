@@ -23,7 +23,7 @@ spark = SparkSession.builder.appName("LogisticRegressionExample").getOrCreate()
 path1 = 'test.npy'
 path2 = 'train.npy'
 path3 = 'DatasetVGG19/validation.npy'
-bucket = "taller-aws-s3"
+bucket = "esteesmybucket"
 localPath = pathlib.Path().resolve()
 
 train_data_path = pathlib.Path(localPath ,path2)
