@@ -46,6 +46,8 @@ def unpack(array):
 df_train = unpack(np.load(s3.open('{}/{}'.format(bucket, path2))))
 #df_test = unpack(np.load(s3.open('{}/{}'.format(bucket, path1))))
 
+df_train = df_train.cache()
+
 def writeJson(tiempo,accu,metod):
     nuevo_registro = {
         'Tipo Ejecucion' : "ClusterAWS",
